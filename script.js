@@ -4,10 +4,10 @@ class Person {
 		this.name = name;
 		this.age=age;
 	}
-    set age1(ageValue){
-        console.log(this.age);
+    set age(newAge){
+      this.age=newAge;
     }
-    get name1(){
+    get name(){
       return this.name;
     }
 }
@@ -29,8 +29,8 @@ class Teacher extends Person {
         console.log(this.name + "is teaching");
     }
 }
-Person.name1="Adarsh";
-console.log(Person.name1)
+let p = new Person("Adarsh, 25");
+console.log(p.name)
 
 // Do not change the code below this line
 window.Person = Person;
